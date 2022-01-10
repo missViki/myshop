@@ -8,6 +8,9 @@
     --red: #F16D7F;
     --red-color:#FF6A6A;
     --red-color-new:#F26376;
+    --white-color: #E8E8E8;
+    --blue:#00bfff;
+    --light-grey: #E1E1E1;
 }
 
 .body {
@@ -62,14 +65,51 @@
     margin: 0 0 0 41px;
 }
 
-.header__link {
-    margin: 0 0 0 33px;
+.loupe__icon {
+    fill: var(--white-color);
+}
+
+.header__search:hover .loupe__icon,
+.header__search:active .loupe__icon {
+    fill: var(--blue);
 }
 
 .header__menu--button {
     border: 1px solid;
     background-color: transparent;
+} 
+
+.burger__icon {
+    fill: var(--white-color);
 }
+
+.header__menu--button:hover .burger__icon,
+.header__menu--button:active .burger__icon {
+    fill: var(--blue);
+}
+
+.header__link {
+    margin: 0 0 0 33px;
+}
+
+.people__icon {
+    fill: var(--white-color);
+}
+
+.header__link:hover .people__icon,
+.header__link:active .people__icon {
+    fill: var(--blue);
+}
+
+.basket__icon {
+    fill: var(--white-color);
+}
+
+.header__link:hover .basket__icon,
+.header__link:active .basket__icon {
+    fill: var(--blue);
+}
+
 
 .brand {
     display: flex;
@@ -82,6 +122,17 @@
     flex-grow: 1;
     background-color: var(--pink);
     padding: 0 0 0 92px;
+    position: relative;
+}
+
+.brand__title-wrp::before {
+    border: 2px solid #F16D7F;
+    background: #F16D7F;
+    position: absolute;
+    content: ' ';
+    width: 7px;
+    height: 80px;
+    left: 60px;
 }
 
 .brand__title {
@@ -229,7 +280,13 @@
     line-height: 19px
 }
 
-.products__click {
+.products__btn {
+    position: relative;
+    height: 47px;
+    margin-bottom: 96px;
+}
+
+.products__btn--click {
     border: 1px solid var(--red-color) ;
     font-size: 16px;
     line-height: 19p;
@@ -238,4 +295,250 @@
     justify-content: center;
     display: flex;
     padding: 14px 39px 14px 39px;
+    align-items: center;
+    position: absolute;
+    left: 450px;
+}
+
+.products__btn:hover .products__btn--click,
+.products__btn:focus .products__btn--click {
+    background: var(--white-color);
+}
+
+.information {
+    background: var(--black)
+}
+
+.information__list {
+    display: flex;
+    justify-content: space-between;    
+}
+
+.information__item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 300px;
+    min-height: 360px;
+    fill: var(--red);
+}
+
+.information__item:active .car__icon,
+.information__item:hover .car__icon {
+    fill: var(--blue);
+}
+
+.information__item:active .persent__icon,
+.information__item:hover .persent__icon {
+    fill: var(--blue);
+}
+
+.information__item:active .crown__icon,
+.information__item:hover .crown__icon {
+    fill: var(--blue);
+}
+
+.information__item-title {
+    font-size: 19.96px;
+    line-height: 24px;
+    color: var(--white);
+    padding: 28px 0px 16px 0px;
+    text-align: center;
+}
+
+.information__item-text {
+    font-weight: 300; 
+    font-size: 13.972px;
+    line-height: 17px;
+    color: var(--white);
+    text-align: center;
+}
+
+
+
+.footer {
+    background-image: url(../png/footer.png);
+    background: rgba(244, 244, 244, 0.7);
+}
+
+.footer__list {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+}
+
+.footer__item {
+    width: 460px;
+    min-height: 450px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.footer--img {
+    padding-top: 87px;
+    padding-bottom: 32px;
+}
+
+.footer--title {
+    font-size: 20px;
+    line-height: 24px;
+    text-align: center;
+    color: var(--black);
+    padding-bottom: 126px;
+}
+
+.footer--text {
+    font-size: 24px;
+    line-height: 167.2%;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.footer--inscription {
+    font-size: 24px;
+    line-height: 167.2%;
+    text-align: center;
+    text-transform: uppercase;
+    padding-bottom: 32px;
+}
+
+.footer__button {
+    display: flex;
+    min-height: 49px;
+    width: 100%;
+}
+
+
+.footer__button-email {
+    background: var(--light-grey);
+    -webkit-border-top-left-radius: 20px;
+    -webkit-border-bottom-left-radius: 20px;
+    -moz-border-radius-topleft: 20px;
+    -moz-border-radius-bottomleft: 20px;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+}
+
+
+.footer__button-click {
+    background: var(--red);
+    -webkit-border-top-right-radius: 20px;
+    -webkit-border-bottom-right-radius: 20px;
+    -moz-border-radius-topright: 20px;
+    -moz-border-radius-bottomright: 20px;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;;
+}
+
+.footer__button:hover .footer__button-email,
+.footer__button:focus .footer__button-email {
+    fill: var(--black);
+}
+
+
+.footer__links {
+    background: var(--black);
+    min-height: 78px;
+    display: flex;  
+    justify-content: space-between;
+    min-height: 60px;
+    flex-wrap: wrap;
+}
+
+
+.footer__links--offer {
+    font-size: 16px;
+    line-height: 19px;
+    color: var(--white);
+    padding: 30px 1033px 30px 235px;
+    position: relative;
+}
+.footer__links-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 150px;
+    position: absolute;
+    left: 1200px;
+    padding-bottom: 30px;
+}
+
+.footer__links-item {
+    padding-top: 23px;
+}
+
+.item__facebook {
+    background: var(--white);
+    width: 32px;
+    height: 32px;
+    position: relative;
+}
+
+.item__facebook:hover,
+.item__facebook:focus {
+    background: var(--red-color);
+}
+
+.facebook__icon {
+    position: absolute;
+    left: 11px;
+    top: 9px;
+}
+
+.item__instagram {
+    background: var(--white);
+    width: 32px;
+    height: 32px;
+    position: relative;
+}
+
+.instagram__icon {
+    position: absolute; 
+    left: 9px; 
+    top: 9px;
+}
+
+.item__instagram:hover,
+.item__instagram:focus {
+    background: var(--red-color);
+}
+
+.item__pinterest {
+    background: var(--white);
+    width: 32px;
+    height: 32px;
+    position: relative;
+}
+
+.pinterest__icon {
+    position: absolute;
+    left: 11px;
+    top: 9px;
+}
+
+.item__pinterest:hover,
+.item__pinterest:focus {
+    background: var(--red-color);
+}
+
+.item__twitter {
+    background: var(--white);
+    width: 32px;
+    height: 32px;
+    position: relative;
+}
+
+.twitter__icon {
+    position: absolute;
+    left: 9px;
+    top: 9px;
+}
+
+.item__twitter:hover,
+.item__twitter:focus {
+    background: var(--red-color);
 }
