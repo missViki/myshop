@@ -1,0 +1,42 @@
+.brand {
+    display: flex;
+    margin: 0 0 65px 63px;
+}
+
+.brand__title-wrp {
+    display: flex;
+    align-items: center;
+    flex-grow: 1;
+    background-color: $pink;
+    padding: 0 0 0 92px;
+    position: relative;
+}
+
+.brand__title-wrp::before {
+    border: 2px solid #F16D7F;
+    background: #F16D7F;
+    position: absolute;
+    content: ' ';
+    width: 7px;
+    height: 80px;
+    left: 60px;
+}
+
+.brand__title {
+    font-size: 48px;
+    line-height: 58px;
+    font-weight: 900;
+    text-transform: uppercase;
+}
+
+.brand__subtitle {
+    font-size: 32px;
+    line-height: 38px;
+    font-weight: 700;
+    font-style: normal;
+    display: block;
+}
+
+.brand__subtitle-pink {
+    color: $pink-color;
+}
