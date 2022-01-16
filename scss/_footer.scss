@@ -1,0 +1,234 @@
+.footer {
+    background-image: url(../png/footer.png);
+    background: rgba(244, 244, 244, 0.7);
+}
+
+.footer__list {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+}
+
+.footer__item {
+    width: 460px;
+    min-height: 450px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.footer--img {
+    padding-top: 87px;
+    padding-bottom: 32px;
+}
+
+.footer--title {
+    font-size: 20px;
+    line-height: 24px;
+    text-align: center;
+    color: $black;
+    padding-bottom: 126px;
+}
+
+.footer--text {
+    font-size: 24px;
+    line-height: 167.2%;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.footer--inscription {
+    font-size: 24px;
+    line-height: 167.2%;
+    text-align: center;
+    text-transform: uppercase;
+    padding-bottom: 32px;
+}
+
+.footer__button {
+    display: flex;
+    min-height: 49px;
+    width: 100%;
+}
+
+
+.footer__button-email {
+    background: var(--light-grey);
+    -webkit-border-top-left-radius: 20px;
+    -webkit-border-bottom-left-radius: 20px;
+    -moz-border-radius-topleft: 20px;
+    -moz-border-radius-bottomleft: 20px;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+}
+
+
+.footer__button-click {
+    background: $red;
+    -webkit-border-top-right-radius: 20px;
+    -webkit-border-bottom-right-radius: 20px;
+    -moz-border-radius-topright: 20px;
+    -moz-border-radius-bottomright: 20px;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;;
+}
+
+.footer__button:hover .footer__button-email,
+.footer__button:focus .footer__button-email {
+    fill: $black;
+}
+
+
+.footer__links {
+    background: $black;
+    min-height: 78px;
+    display: flex;  
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+
+.footer__links--offer {
+    font-size: 16px;
+    line-height: 19px;
+    color: $white;
+    padding: 30px 1033px 30px 235px;
+    position: relative;
+}
+.footer__links-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 150px;
+    position: absolute;
+    left: 1200px;
+    padding-bottom: 30px;
+}
+
+.footer__links-item {
+    padding-top: 23px;
+}
+
+.item__facebook {
+    background: $white;
+    width: 32px;
+    height: 32px;
+    position: relative;
+}
+
+.item__facebook:hover,
+.item__facebook:focus {
+    background: $red-color;
+}
+
+.facebook__icon {
+    position: absolute;
+    left: 11px;
+    top: 9px;
+}
+
+.item__instagram {
+    background: $white;
+    width: 32px;
+    height: 32px;
+    position: relative;
+}
+
+.instagram__icon {
+    position: absolute; 
+    left: 9px; 
+    top: 9px;
+}
+
+.item__instagram:hover,
+.item__instagram:focus {
+    background: $red-color;
+}
+
+.item__pinterest {
+    background: $white;
+    width: 32px;
+    height: 32px;
+    position: relative;
+}
+
+.pinterest__icon {
+    position: absolute;
+    left: 11px;
+    top: 9px;
+}
+
+.item__pinterest:hover,
+.item__pinterest:focus {
+    background: $red-color;
+}
+
+.item__twitter {
+    background: $white;
+    width: 32px;
+    height: 32px;
+    position: relative;
+}
+
+.twitter__icon {
+    position: absolute;
+    left: 9px;
+    top: 9px;
+}
+
+.item__twitter:hover,
+.item__twitter:focus {
+    background: $red-color;
+}
+
+
+@media (max-width: 1599px) {
+    .footer__list {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer__links--offer {
+        padding: 30px 85px 30px 30px;
+    }
+
+    .footer__links-list {
+        left: 600px;
+    }
+
+}
+
+@media (max-width: 767px) {
+    .footer__list {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer__item {
+        width: 375px;
+        min-height: 410px;
+    }
+
+    .footer--inscription {
+        font-size: 14px;
+        line-height: 21px;
+        padding-bottom: 22px;
+    }
+
+    .footer__links {
+        min-height: 143px;
+    }
+
+    .footer__links--offer {
+        padding: 115px 62px 9px 62px;
+    }
+
+    .footer__links-list {
+        left: 105px;
+    }
+}
+

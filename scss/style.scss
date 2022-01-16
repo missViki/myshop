@@ -1,5 +1,9 @@
-@import './variables.scss';
-@import './general';
-@import './bloks/header';
-@import './bloks/brand';
-@import './bloks/sales';
+@import 'reset';
+@import 'variables';
+@import 'general';
+@import 'header';
+@import 'footer';
+@import 'brand';
+@import 'sales';
+@import 'products';
+@import 'information';

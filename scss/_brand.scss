@@ -3,6 +3,7 @@
     margin: 0 0 65px 63px;
 }
 
+
 .brand__title-wrp {
     display: flex;
     align-items: center;
@@ -39,4 +40,47 @@
 
 .brand__subtitle-pink {
     color: $pink-color;
+}
+
+@media (max-width: 1599px) {
+
+    .brand {
+        margin: 0 0 18px 0;
+    }
+
+    .brand__img {
+        height: 367px;
+        object-fit: cover;
+        width: 50%;
+    }
+
+    .brand__title {
+        font-size: 44px;
+        line-height: 53px;
+    }
+    
+}
+
+@media (max-width: 767px) {
+
+    .brand {
+        min-height: 363px;
+        margin: 0 0 64px 0;
+    }
+
+    .brand__img {
+        display: none;
+    }
+
+    .brand__title {
+        font-size: 38px;
+        line-height: 46px;
+    }
+
+    .brand__subtitle {
+        font-size: 20px;
+        line-height: 24px;
+        font-weight: 700px;
+    }
+
 }

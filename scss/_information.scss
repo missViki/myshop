@@ -1,0 +1,74 @@
+.information {
+    background: $black;
+}
+
+.information__list {
+    display: flex;
+    justify-content: space-between;    
+}
+
+.information__item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 300px;
+    min-height: 360px;
+    fill: $red;
+}
+
+.information__item:active .car__icon,
+.information__item:hover .car__icon {
+    fill: $blue;
+}
+
+.information__item:active .persent__icon,
+.information__item:hover .persent__icon {
+    fill: $blue;
+}
+
+.information__item:active .crown__icon,
+.information__item:hover .crown__icon {
+    fill: $blue;
+}
+
+.information__item-title {
+    font-size: 19.96px;
+    line-height: 24px;
+    color: $white;
+    padding: 28px 0px 16px 0px;
+    text-align: center;
+}
+
+.information__item-text {
+    font-weight: 300px; 
+    font-size: 13.972px;
+    line-height: 17px;
+    color: $white;
+    text-align: center;
+}
+
+@media (max-width: 1599px) {
+
+    .information__item {
+        min-height: 300px;
+    }
+
+    .information__list {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .car__icon {
+        margin: 0;
+    }
+}
+
+@media (max-width: 767px) {
+    .information__list {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}

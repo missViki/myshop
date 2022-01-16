@@ -69,3 +69,28 @@
 .header__link:active .basket__icon {
     fill: $blue;
 }
+
+@media (max-width: 1599px) {
+    .header__logo-form-wrp {
+        margin: 0 0 0 16px;
+    }
+    
+
+    .header__menu {
+        margin: 0 16px 0 0;
+    }
+}
+
+@media (max-width: 767px) {
+    .header__logo-form-wrp {
+    margin: 0 0 0 16px;
+    }
+
+    .header__menu {
+        margin: 0 16px 0 0;
+    }
+
+    .header__link {
+        display: none;
+    }
+}
