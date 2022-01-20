@@ -61,7 +61,7 @@
 .products__btn--click {
     border: 1px solid $red-color;
     font-size: 16px;
-    line-height: 19p;
+    line-height: 19px;
     color: $red-color-new;
     text-decoration: none;
     justify-content: center;
@@ -70,11 +70,18 @@
     align-items: center;
     position: absolute;
     left: 450px;
+    transition: transform 700ms, border-radius 700ms;
+}
+
+.products__item:hover .products__item--img {
+    background: rgba(58, 56, 56, 0.86);
 }
 
 .products__btn:hover .products__btn--click,
 .products__btn:focus .products__btn--click {
     background: $white-color;
+    transform: scale(1.0);
+    border-radius: 20px;
 }
 
 @media (max-width: 1599px) {

@@ -486,14 +486,14 @@ table {
 .brand__title {
   font-size: 48px;
   line-height: 58px;
-  font-weight: 900;
+  font-weight: 900px;
   text-transform: uppercase;
 }
 
 .brand__subtitle {
   font-size: 32px;
   line-height: 38px;
-  font-weight: 700;
+  font-weight: 700px;
   font-style: normal;
   display: block;
 }
@@ -533,7 +533,6 @@ table {
   .brand__subtitle {
     font-size: 20px;
     line-height: 24px;
-    font-weight: 700px;
   }
 }
 
@@ -739,7 +738,7 @@ table {
 .products__btn--click {
   border: 1px solid #FF6A6A;
   font-size: 16px;
-  line-height: 19p;
+  line-height: 19px;
   color: #F26376;
   text-decoration: none;
   -webkit-box-pack: center;
@@ -754,11 +753,22 @@ table {
           align-items: center;
   position: absolute;
   left: 450px;
+  -webkit-transition: border-radius 700ms, -webkit-transform 700ms;
+  transition: border-radius 700ms, -webkit-transform 700ms;
+  transition: transform 700ms, border-radius 700ms;
+  transition: transform 700ms, border-radius 700ms, -webkit-transform 700ms;
+}
+
+.products__item:hover .products__item--img {
+  background: rgba(58, 56, 56, 0.86);
 }
 
 .products__btn:hover .products__btn--click,
 .products__btn:focus .products__btn--click {
   background: #E8E8E8;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+  border-radius: 20px;
 }
 
 @media (max-width: 1599px) {
