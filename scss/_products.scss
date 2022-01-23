@@ -31,23 +31,23 @@
 }
 
 .products__item-title {
-    margin: 26px 150px 13px 0px;
+    margin: 26px 150px 13px 0;
     text-transform: uppercase;
     font-size: 13px;
     line-height: 16px;
 }
 
 .products__item-text {
-    font-weight: 300;
+    font-weight: 300px;
     font-size: 14px;
     line-height: 17px;
     color: $dark_grey;
-    margin: 0px 29px 18px 16px;
+    margin: 0 29px 18px 16px;
 }
 
 .products__item-price {
     color: $red;
-    margin: 0px 289px 50px 16px ;
+    margin: 0 289px 50px 16px ;
     font-size: 16px;
     line-height: 19px
 }
