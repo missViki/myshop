@@ -378,6 +378,67 @@
     flex-direction: column;
 }
 
+.footer--img {
+    padding-top: 87px;
+    padding-bottom: 32px;
+}
+
+.footer--title {
+    font-size: 20px;
+    line-height: 24px;
+    text-align: center;
+    color: var(--black);
+    padding-bottom: 126px;
+}
+
+.footer--text {
+    font-size: 24px;
+    line-height: 167.2%;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.footer--inscription {
+    font-size: 24px;
+    line-height: 167.2%;
+    text-align: center;
+    text-transform: uppercase;
+    padding-bottom: 32px;
+}
+
+.footer__button {
+    display: flex;
+    min-height: 49px;
+    width: 100%;
+}
+
+
+.footer__button-email {
+    background: var(--light-grey);
+    -webkit-border-top-left-radius: 20px;
+    -webkit-border-bottom-left-radius: 20px;
+    -moz-border-radius-topleft: 20px;
+    -moz-border-radius-bottomleft: 20px;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+}
+
+
+.footer__button-click {
+    background: var(--red);
+    -webkit-border-top-right-radius: 20px;
+    -webkit-border-bottom-right-radius: 20px;
+    -moz-border-radius-topright: 20px;
+    -moz-border-radius-bottomright: 20px;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;;
+}
+
+.footer__button:hover .footer__button-email,
+.footer__button:focus .footer__button-email {
+    fill: var(--black);
+}
+
 
 .footer__links {
     background: var(--black);
