@@ -3,7 +3,6 @@
     margin: 0 0 65px 63px;
 }
 
-
 .brand__title-wrp {
     display: flex;
     align-items: center;
@@ -42,7 +41,7 @@
     color: $pink-color;
 }
 
-@media (max-width: 1599px) {
+@media (max-width: 1024px) {
 
     .brand {
         margin: 0 0 18px 0;

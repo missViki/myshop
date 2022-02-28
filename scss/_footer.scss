@@ -3,6 +3,7 @@
     background: rgba(244, 244, 244, 0.7);
 }
 
+
 .footer__list {
     display: flex;
     justify-content: space-between;
@@ -184,7 +185,7 @@
 }
 
 
-@media (max-width: 1599px) {
+@media (max-width: 1024px) {
     .footer__list {
         display: flex;
         flex-direction: column;
