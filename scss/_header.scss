@@ -63,6 +63,27 @@
 
 .basket__icon {
     fill: $white-color;
+    
+}
+
+.basket  {
+    position: absolute;
+    z-index: 3;
+    right: 0;
+    top: 37px;
+    background: white;
+    padding: 10px;
+    border: 1px solid #ebebeb;
+    border-radius: 3px;
+    font-size: 14px;
+}
+
+.basketHeader {
+    font-weight: bold;
+}
+
+.basketTotal {
+    font-weight: bold;
 }
 
 .header__link:hover .basket__icon,

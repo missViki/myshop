@@ -164,6 +164,22 @@ table {
   fill: #E8E8E8;
 }
 
+.basket {
+  position: absolute;
+  z-index: 3;
+  right: 0;
+  top: 37px;
+  background: white;
+  padding: 10px;
+  border: 1px solid #ebebeb;
+  border-radius: 3px;
+  font-size: 14px;
+}
+
+.basketHeader {
+  font-weight: bold;
+}
+
 .header__link:hover .basket__icon,
 .header__link:active .basket__icon {
   fill: #00bfff;
@@ -727,6 +743,7 @@ table {
   padding-left: 20px;
   padding-bottom: 9px;
   padding-right: 20px;
+  background: rgba(58, 56, 56, 0.86);
 }
 
 .border__basket {
